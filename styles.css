@@ -1,0 +1,22 @@
+blockquote {
+    background-clip: padding-box;
+    padding: 1em;
+    border: 4px double;
+    color: #cc0013;
+    background-color: #1FB000;
+    opacity: 1;
+}
+body {
+    background-color:#008472
+}
+a:link {
+    color: red;
+}
+a:visited {
+    color: blue;
+}
+input:focus { background-color: yellow; }
+a:hover {
+    color: maroon;
+    background-color: #ffd9d9
+}
