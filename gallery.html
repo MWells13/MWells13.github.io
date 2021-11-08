@@ -5,6 +5,13 @@
         <link rel="stylesheet" href="styles.css">
         </head>
         <body>
+            <p class="image">
+                <p class="image2">
+                    <p class="image3">
+                        <p class="image4">
+                            <p class="image5">
+                                <p class="image6">
+                <body class="gallery">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -13,12 +20,12 @@
                     <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
-            <h1>Michelle's Gallery</h1>
-            <p class="image"><img src="images/bulls ice.png" alt="Bulls Ice Logo" height="250"></p>
-            <p class="photo2"><img src="images/bulls ice2.png" alt="Bulls Ice Logo" height="250"></p>
-            <p class="photo3"><img src="images/20210211-Bulls Ice Logo-WakelynHouston.jpg" alt= "Bulls Ice Goalies" height="250"></p>
-            <p class="photo4"><img src="images/Bulls Ice Forwards.png" alt="Bulls Ice Forwards" height="250"></p>
-            <p class="photo5"><img src="images/Bulls Ice Rookies.png" alt="Bulls Ice Rookies" height="250"></p>
+            <h1 class="gallery"> <h1>Michelle's Gallery</h1>
+            <p class="image2"><img src="images/bulls ice.png" alt="Bulls Ice Logo" height="250"></p>
+            <p class="image3"><img src="images/bulls ice2.png" alt="Bulls Ice Logo" height="250"></p>
+            <p class="image4"><img src="images/20210211-Bulls Ice Logo-WakelynHouston.jpg" alt= "Bulls Ice Goalies" height="250"></p>
+            <p class="image5"><img src="images/Bulls Ice Forwards.png" alt="Bulls Ice Forwards" height="250"></p>
+            <p class="image6"><img src="images/Bulls Ice Rookies.png" alt="Bulls Ice Rookies" height="250"></p>
             
         </body>
         <style>
@@ -31,10 +38,45 @@
                 font-family: sans-serif
             }
             .image {
-                order: -1;
+                display: flex;
+                align-items:flex-start;
+                flex-direction: row;
+                align-content: center;
             }
-            .photo2 {
-                order: 2;
+            .gallery { 
+                align-self: flex-end;
             }
+            .image2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row-reverse;
+            }
+            .image3 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-end;
+                flex-direction: row-reverse;
+                
+            }
+            .image4 {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                flex-direction: row-reverse;
+            }
+            .image5 {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: row-reverse;
+            }
+            .image6 {
+                flex-direction: row-reverse;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+            }
+
         </style>
 </html>
