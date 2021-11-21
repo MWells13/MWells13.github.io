@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JS Exercises</title>
+</head>
+
+<style>
+    body {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    button {
+        border: none;
+        background-color: rgba(0, 132, 255, 0.8);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 100px;
+        margin: 0.5em 0 1.5em;
+        transition: background-color 0.3s;
+        cursor: pointer;
+    }
+    h2 {
+        margin-top: 2em;
+    }
+
+    button:hover {
+        background-color: rgba(0, 132, 255, 1);
+    }
+    
+    .target {
+        background-color: #ccc;
+        width: 50px;
+        height: 50px;
+        transition: all 0.7s;
+    }
+
+    .moved {
+        transform: translateX(200px);
+        position: relative;
+        left: 200px
+    }
+
+</style>
+<body>
+    <h1>JavaScript Exercises</h1>
+    <h2>Hello World</h2>
+    <div class="hello-world">
+    <button onclick="helloWorld()">Hello World</button>
+    </div>
+    
+    <h2>Hello Michelle</h2>
+    <div class="hello-michelle">
+    <button onclick="hello('Michelle')">Hello Michelle</button>
+    </div>
+    
+    <h2>Hello name</h2>
+    <div class="hello-name">
+    <button onclick="helloName()">Hello name</button>
+    </div>
+
+    <h2>Hello Confirmed</h2>
+    <div class="hello-confirmed">
+        <button onclick="helloConfirm()">Hello Confirmed</button>
+        </div>
+        
+    <h2>Count to ten</h2>
+    <div class="count-to-ten">
+        <button onclick="countToTen()">Count to Ten</button>
+    </div>
+
+    <h2>Change Div Color</h2>
+    <div id="change-color-target" class="target"></div>
+    <div class="change-color-btn">
+        <button onclick="changeColor()">Change the DIV</button>
+    </div>
+
+    <h2>Move Div Using a Class</h2>
+    <div id="move-div-target" class="target"></div>
+    <div class="move-div-btn-div">
+        <button onclick="moveDivWithClass()" id="move-div-btn">Move the DIV</button>
+    </div>
+
+    <script>
+        function helloWorld(){
+            alert("Hello world");
+        }
+    
+        function hello(name) {
+            alert("Hello" + name + "!");
+        }
+
+        function helloName() {
+             var n = prompt("What's your name");
+             alert("Hello" + n + "!");
+        }
+
+        function helloConfirm() {
+            var n = prompt("What's your name?");
+            var confirmed = confirm("Are you sure that" + n +  "is your name?");
+
+            if (!confirmed) {
+                n = prompt("Ok, then what is your name?");
+                confirmed = confirm("Are you sure that" + n + "is your name?");
+            }
+                if (confirmed) {
+                    alert("Hello" + n + "!");
+            }
+        } 
+        
+        function countToTen() {
+            for(i = 1; i <= 10; i++){
+                alert(i);
+            }
+        }
+
+        function changeColor() {
+            //document.getElementById("change-color-target").style.backgroundColor = "#fc0";
+
+            var box = document.getElementById("change-color-target");
+            box.style.backgroundColor = "#fc0";
+        }
+        function moveDivWithClass(){
+            document.getElementById("move-div-target").classList.toggle("moved");
+        }
+        document.getElementById("change-color-target").classList
+        </script>
+</body>
+
+</html>

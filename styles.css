@@ -54,4 +54,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
 }
-
+span.date {
+    float: right;
+    margin: 0 12 px;
+}
