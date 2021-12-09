@@ -42,7 +42,8 @@ h1 {
     transition-duration: 0.3s; 
 }
 #fig1 a:hover, #fig1 a:focus {
-	background-color: red;
+	background-color: #c6de89;
+	border-color: #a3c058;
 }
 	
 
@@ -204,6 +205,10 @@ p.tf {
 	background-color: #fdca00;
 	border-color: #fda700;
 
+}
+a{
+	position: relative;
+	top: 0px; 
 }
 #fig5 a:active {
 	top: 3px;
